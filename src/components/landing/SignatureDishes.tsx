@@ -12,35 +12,39 @@ import { Button } from '@/components/ui/button';
 
 const dishes = [
   {
-    name: "Truffle Lobster Risotto",
+    name: "Fresh Green Zucchini",
     image: "https://picsum.photos/600/400",
-    hint: "lobster risotto",
+    hint: "grilled zucchini",
+    price: "In Stock"
   },
   {
-    name: "Wagyu Steak with Gold Leaf",
+    name: "Zucchini Slices in a bowl",
     image: "https://picsum.photos/600/401",
-    hint: "wagyu steak",
+    hint: "zucchini bowl",
+    price: "In Stock"
   },
   {
-    name: "Caviar-topped Oysters",
+    name: "Sunomono Cucumber Salad",
     image: "https://picsum.photos/600/402",
-    hint: "caviar oysters",
+    hint: "cucumber salad",
+    price: "In Stock"
   },
   {
-    name: "Seared Scallops",
+    name: "Avocado Smoothie",
     image: "https://picsum.photos/600/403",
-    hint: "seared scallops",
+    hint: "avocado smoothie",
+    price: "In Stock"
   },
 ];
 
 export default function SignatureDishes() {
   return (
-    <section className="py-24 sm:py-32 bg-foreground/5">
+    <section className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl sm:text-5xl text-primary">Our Signature Creations</h2>
-          <p className="mt-4 text-lg text-foreground/70 max-w-2xl mx-auto">
-            A glimpse into the artistry that defines our culinary philosophy.
+        <div className="text-left mb-16">
+          <h2 className="font-headline text-4xl sm:text-5xl text-foreground">Shop smart with Forma Health—fuel your hair from the inside out</h2>
+          <p className="mt-4 text-lg text-foreground/70 max-w-2xl">
+            Enjoy healthier life with nutrient-rich plant based foods.
           </p>
         </div>
         
@@ -54,34 +58,32 @@ export default function SignatureDishes() {
           <CarouselContent>
             {dishes.map((dish, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 group">
-                <Card className="overflow-hidden border-border bg-background h-full flex flex-col shadow-lg">
-                  <CardContent className="p-0 flex-grow flex flex-col">
-                    <div className="relative h-64 w-full overflow-hidden">
-                      <Image
-                        src={dish.image}
-                        alt={dish.name}
-                        fill
-                        className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                        data-ai-hint={dish.hint}
-                      />
-                    </div>
-                    <div className="p-6 flex-grow">
-                      <h3 className="font-headline text-2xl text-primary">{dish.name}</h3>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="p-4">
+                  <Card className="overflow-hidden border-2 bg-background h-full flex flex-col shadow-lg rounded-3xl">
+                    <CardContent className="p-4 flex-grow flex flex-col">
+                      <div className="relative h-64 w-full overflow-hidden rounded-2xl">
+                        <Image
+                          src={dish.image}
+                          alt={dish.name}
+                          fill
+                          className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                          data-ai-hint={dish.hint}
+                        />
+                         <div className="absolute top-2 left-2 bg-white/80 text-foreground text-xs px-2 py-1 rounded-full">{dish.price}</div>
+                      </div>
+                      <div className="p-4 flex-grow flex flex-col justify-between">
+                        <h3 className="font-headline text-2xl text-foreground mb-4">{dish.name}</h3>
+                        <Button className="w-full rounded-full border-2 border-foreground hover:bg-primary hover:border-primary">Add to Cart</Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>
           <CarouselPrevious className="ml-12 hidden sm:flex" />
           <CarouselNext className="mr-12 hidden sm:flex" />
         </Carousel>
-
-        <div className="text-center mt-16">
-          <Button size="lg" variant="secondary" asChild>
-            <Link href="/menu">Explore Full Menu &rarr;</Link>
-          </Button>
-        </div>
       </div>
     </section>
   );

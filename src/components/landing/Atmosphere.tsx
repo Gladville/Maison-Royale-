@@ -1,3 +1,4 @@
+// This component is no longer used in page.tsx. You can remove it if you wish.
 "use client";
 
 import { useLayoutEffect, useRef } from 'react';
@@ -35,23 +36,23 @@ export default function Atmosphere() {
         <Image
           ref={parallaxImage}
           src="https://picsum.photos/1200/1000"
-          alt="Champagne being poured"
+          alt="Fresh organic vegetables"
           fill
           className="object-cover scale-125"
-          data-ai-hint="cocktail pour"
+          data-ai-hint="fresh vegetables"
         />
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <h2 className="font-headline text-4xl sm:text-5xl lg:text-6xl text-secondary">
-            An Unrivaled Ambiance
+          <h2 className="font-headline text-4xl sm:text-5xl lg:text-6xl text-primary">
+            Freshness Delivered Daily
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-white">
-            Curated wines, crafted cocktails, and champagne celebrations. Our bar is a symphony of spirits, designed to elevate your evening.
+            From farm to your table. We source the best ingredients for a healthier life.
           </p>
-          <Button size="lg" variant="secondary" asChild>
-            <Link href="/menu/drinks">See Our Wine List &rarr;</Link>
+          <Button size="lg" asChild className="rounded-full">
+            <Link href="/menu/drinks">See Our Products</Link>
           </Button>
         </div>
       </div>
