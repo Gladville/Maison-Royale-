@@ -44,7 +44,7 @@ export default function SecAbout() {
   }, []);
 
   return (
-    <section ref={component} className="py-24 sm:py-32 bg-background overflow-hidden">
+    <section ref={component} className="py-4 sm:py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div ref={textRef} className="space-y-6">

@@ -39,7 +39,7 @@ const dishes = [
 
 export default function SignatureDishes() {
   return (
-    <section className="py-24 sm:py-32 bg-background">
+    <section className="py-4 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
           <h2 className="font-headline text-4xl sm:text-5xl text-foreground">Shop smart with Forma Health—fuel your hair from the inside out</h2>

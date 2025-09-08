@@ -52,7 +52,7 @@ export default function Hero() {
     <section ref={component} className="relative h-screen w-full flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://picsum.photos/1920/1080"
+          src="/public/1.jpg"
           alt="Fresh vegetables and healthy food ingredients on a rustic table"
           fill
           priority
