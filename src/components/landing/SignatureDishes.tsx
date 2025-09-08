@@ -35,11 +35,11 @@ const dishes = [
 
 export default function SignatureDishes() {
   return (
-    <section className="py-24 sm:py-32 bg-card">
+    <section className="py-24 sm:py-32 bg-foreground/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-headline text-4xl sm:text-5xl text-primary">Our Signature Creations</h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-foreground/70 max-w-2xl mx-auto">
             A glimpse into the artistry that defines our culinary philosophy.
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function SignatureDishes() {
           <CarouselContent>
             {dishes.map((dish, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 group">
-                <Card className="overflow-hidden border-border bg-background h-full flex flex-col">
+                <Card className="overflow-hidden border-border bg-background h-full flex flex-col shadow-lg">
                   <CardContent className="p-0 flex-grow flex flex-col">
                     <div className="relative h-64 w-full overflow-hidden">
                       <Image
@@ -66,7 +66,7 @@ export default function SignatureDishes() {
                       />
                     </div>
                     <div className="p-6 flex-grow">
-                      <h3 className="font-headline text-2xl text-foreground">{dish.name}</h3>
+                      <h3 className="font-headline text-2xl text-primary">{dish.name}</h3>
                     </div>
                   </CardContent>
                 </Card>
@@ -78,7 +78,7 @@ export default function SignatureDishes() {
         </Carousel>
 
         <div className="text-center mt-16">
-          <Button size="lg" asChild>
+          <Button size="lg" variant="secondary" asChild>
             <Link href="/menu">Explore Full Menu &rarr;</Link>
           </Button>
         </div>

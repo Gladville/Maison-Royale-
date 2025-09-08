@@ -34,7 +34,7 @@ export default function Experience() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-headline text-4xl sm:text-5xl text-primary">More Than a Meal</h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto">
             Beyond dining – an immersive world of elegance, music, and art.
           </p>
         </div>
@@ -64,10 +64,10 @@ export default function Experience() {
             </div>
           </div>
           <div className="text-center lg:text-left lg:pl-16">
-            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            <p className="text-xl text-foreground/80 leading-relaxed mb-8">
               Every detail at Maison Royale is meticulously curated to create an atmosphere of sophisticated charm. From the breathtaking views of the London skyline to the live classical music and rotating collection of fine art, your experience with us is designed to enchant all the senses.
             </p>
-            <Button size="lg" asChild>
+            <Button size="lg" variant="secondary" asChild>
               <Link href="/events">Discover Events & Private Dining &rarr;</Link>
             </Button>
           </div>

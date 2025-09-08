@@ -58,13 +58,13 @@ export default function About() {
           </div>
           <div ref={textRef} className="space-y-6">
             <h2 className="font-headline text-4xl sm:text-5xl text-primary">A Legacy of Flavour</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-foreground/80 leading-relaxed">
               Nestled in the heart of London, Maison Royale is more than a restaurant; it is a testament to a family's century-old passion for culinary excellence. Our story began with a promise to blend timeless tradition with bold innovation, creating an unforgettable dining experience.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-foreground/80 leading-relaxed">
               Each dish is a masterpiece, crafted with locally sourced ingredients and an artist's touch. We invite you to become part of our story, to savour moments of pure indulgence, and to discover a culinary sanctuary where every meal is a celebration.
             </p>
-            <Button variant="link" asChild className="p-0 text-primary text-lg hover:no-underline">
+            <Button variant="link" asChild className="p-0 text-primary text-lg hover:no-underline hover:text-secondary">
               <Link href="/about">
                 Learn More About Us &rarr;
               </Link>

@@ -49,13 +49,13 @@ export default function Header() {
   }, []);
 
   const NavLink = ({ children, href }: { children: React.ReactNode, href: string }) => (
-    <Link href={href} className="text-sm font-medium relative transition-colors hover:text-primary after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-full after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100">
+    <Link href={href} className="text-sm font-medium relative transition-colors text-white hover:text-secondary after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-full after:scale-x-0 after:bg-secondary after:transition-transform after:duration-300 hover:after:scale-x-100">
         {children}
     </Link>
   );
 
   const MobileNavLink = ({ children, href, onClick }: { children: React.ReactNode, href: string, onClick: () => void }) => (
-    <Link href={href} onClick={onClick} className="block py-3 text-lg">
+    <Link href={href} onClick={onClick} className="block py-3 text-lg text-white">
         {children}
     </Link>
   );
@@ -63,11 +63,11 @@ export default function Header() {
   return (
     <header className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      scrolled ? "bg-black/80 backdrop-blur-sm shadow-lg" : "bg-transparent"
+      scrolled ? "bg-primary shadow-lg" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="font-headline text-2xl tracking-wider text-primary">
+          <Link href="/" className="font-headline text-2xl tracking-wider text-secondary">
             Maison Royale
           </Link>
           
@@ -76,13 +76,13 @@ export default function Header() {
             {navLinks.map((link) => 
               link.dropdown ? (
                 <DropdownMenu key={link.name}>
-                  <DropdownMenuTrigger className="flex items-center text-sm font-medium transition-colors hover:text-primary focus:outline-none">
+                  <DropdownMenuTrigger className="flex items-center text-sm font-medium transition-colors text-white hover:text-secondary focus:outline-none">
                     {link.name} <ChevronDown className="ml-1 h-4 w-4" />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className="bg-popover border-border">
+                  <DropdownMenuContent className="bg-primary border-secondary/50">
                     {link.dropdown.map((item) => (
                       <DropdownMenuItem key={item.name} asChild>
-                        <Link href={item.href} className="hover:!bg-accent hover:!text-accent-foreground">{item.name}</Link>
+                        <Link href={item.href} className="text-white hover:!bg-black/20 hover:!text-secondary">{item.name}</Link>
                       </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
@@ -91,7 +91,7 @@ export default function Header() {
                 <NavLink key={link.name} href={link.href}>{link.name}</NavLink>
               )
             )}
-            <Button asChild>
+            <Button variant="secondary" asChild>
               <Link href="/reservations">Reservations</Link>
             </Button>
           </nav>
@@ -100,18 +100,18 @@ export default function Header() {
           <div className="lg:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[80vw] bg-background border-l-border p-6">
+              <SheetContent side="right" className="w-[80vw] bg-primary border-l-secondary/50 p-6">
                 <div className="flex justify-between items-center mb-8">
-                    <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-headline text-2xl text-primary">
+                    <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-headline text-2xl text-secondary">
                         Maison Royale
                     </Link>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon">
+                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                             <X className="h-6 w-6" />
                             <span className="sr-only">Close menu</span>
                         </Button>
@@ -122,8 +122,8 @@ export default function Header() {
                     {navLinks.map((link) => 
                       link.dropdown ? (
                         <Accordion type="single" collapsible key={link.name} className="w-full">
-                          <AccordionItem value={link.name} className="border-b-0">
-                            <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">{link.name}</AccordionTrigger>
+                          <AccordionItem value={link.name} className="border-b-white/20">
+                            <AccordionTrigger className="py-3 text-lg font-medium text-white hover:no-underline">{link.name}</AccordionTrigger>
                             <AccordionContent className="pl-4">
                               {link.dropdown.map((item) => (
                                 <MobileNavLink key={item.name} href={item.href} onClick={() => setMobileMenuOpen(false)}>{item.name}</MobileNavLink>
@@ -136,7 +136,7 @@ export default function Header() {
                       )
                     )}
                   </nav>
-                  <Button asChild className="mt-8 w-full" size="lg">
+                  <Button variant="secondary" asChild className="mt-8 w-full" size="lg">
                     <Link href="/reservations" onClick={() => setMobileMenuOpen(false)}>Reservations</Link>
                   </Button>
                 </div>

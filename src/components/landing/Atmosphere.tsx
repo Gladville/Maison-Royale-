@@ -44,13 +44,13 @@ export default function Atmosphere() {
       </div>
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <h2 className="font-headline text-4xl sm:text-5xl lg:text-6xl text-primary">
+          <h2 className="font-headline text-4xl sm:text-5xl lg:text-6xl text-secondary">
             An Unrivaled Ambiance
           </h2>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-foreground">
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-white">
             Curated wines, crafted cocktails, and champagne celebrations. Our bar is a symphony of spirits, designed to elevate your evening.
           </p>
-          <Button size="lg" asChild>
+          <Button size="lg" variant="secondary" asChild>
             <Link href="/menu/drinks">See Our Wine List &rarr;</Link>
           </Button>
         </div>
