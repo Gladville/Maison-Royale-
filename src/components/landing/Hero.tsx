@@ -66,11 +66,11 @@ export default function Hero() {
           Maison Royale
         </h1>
         <p ref={subheadingRef} className="mt-4 text-lg sm:text-xl lg:text-2xl text-white tracking-wider drop-shadow-lg">
-          Your Daily Healthy food Partner
+          A Culinary Exprience Beyond Taste
         </p>
         <div ref={buttonRef} className="mt-10">
           <Button size="lg" asChild className="text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/30 bg-[#B5CC38] hover:bg-[#014421]  hover:text-white transition-all">
-            <Link href="/reservations">Shop Now</Link>
+            <Link href="/reservations">Reserve a Table</Link>
           </Button>
         </div>
       </div>
