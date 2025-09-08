@@ -63,11 +63,11 @@ export default function Header() {
   return (
     <header className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      scrolled ? "bg-secondary shadow-lg" : "bg-transparent"
+      scrolled ? "bg-[#014421] shadow-lg" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="font-headline text-2xl tracking-wider text-primary">
+          <Link href="/" className="font-headline text-l tracking-wider text-[#B5CC38]">
             Maison Royale
           </Link>
           
@@ -91,7 +91,7 @@ export default function Header() {
                 <NavLink key={link.name} href={link.href}>{link.name}</NavLink>
               )
             )}
-            <Button asChild className="rounded-full">
+            <Button asChild className="rounded-full bg-[#B5CC38]">
               <Link href="/reservations">Reservations</Link>
             </Button>
           </nav>
@@ -105,7 +105,7 @@ export default function Header() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[80vw] bg-secondary border-l-primary/50 p-6">
+              <SheetContent side="right" className="w-[80vw] bg-[#034d2b] border-l-primary/50 p-6">
                 <div className="flex justify-between items-center mb-8">
                     <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-headline text-2xl text-primary">
                         Maison Royale

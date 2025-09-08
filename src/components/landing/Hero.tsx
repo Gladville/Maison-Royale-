@@ -62,14 +62,14 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 ref={headingRef} className="font-headline text-5xl sm:text-7xl lg:text-8xl text-primary drop-shadow-2xl">
+        <h1 ref={headingRef} className="font-headline text-5xl sm:text-7xl lg:text-8xl  text-[#B5CC38] drop-shadow-2xl">
           Maison Royale
         </h1>
         <p ref={subheadingRef} className="mt-4 text-lg sm:text-xl lg:text-2xl text-white tracking-wider drop-shadow-lg">
           Your Daily Healthy food Partner
         </p>
         <div ref={buttonRef} className="mt-10">
-          <Button size="lg" asChild className="text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/30 hover:bg-secondary hover:text-white transition-all">
+          <Button size="lg" asChild className="text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/30 bg-[#B5CC38] hover:bg-[#014421]  hover:text-white transition-all">
             <Link href="/reservations">Shop Now</Link>
           </Button>
         </div>

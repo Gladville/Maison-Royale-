@@ -52,7 +52,7 @@ export default function About() {
             <p className="text-lg text-foreground/80 leading-relaxed">
              We make grocery shopping easy, affordable, and reliable. From farm-fresh produce to your favorite daily essentials.
             </p>
-            <Button asChild className="rounded-full">
+            <Button asChild className="rounded-full text-green-900 bg-[#B5CC38]">
               <Link href="/about">
                 Shop Now &rarr;
               </Link>
