@@ -13,25 +13,25 @@ import { Button } from '@/components/ui/button';
 const dishes = [
   {
     name: "Fresh Green Zucchini",
-    image: "https://picsum.photos/600/400",
+    image: "/assets/51.jpg",
     hint: "grilled zucchini",
     price: "In Stock"
   },
   {
     name: "Zucchini Slices in a bowl",
-    image: "https://picsum.photos/600/401",
+    image: "/assets/52.jpg",
     hint: "zucchini bowl",
     price: "In Stock"
   },
   {
     name: "Sunomono Cucumber Salad",
-    image: "https://picsum.photos/600/402",
+    image: "/assets/54.jpg",
     hint: "cucumber salad",
     price: "In Stock"
   },
   {
     name: "Avocado Smoothie",
-    image: "https://picsum.photos/600/403",
+    image: "/assets/5.jpg",
     hint: "avocado smoothie",
     price: "In Stock"
   },
@@ -39,13 +39,18 @@ const dishes = [
 
 export default function SignatureDishes() {
   return (
-    <section className="py-4 sm:py-32 bg-background">
+    <section className="py-4 sm:py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
-          <h2 className="font-headline text-4xl sm:text-5xl text-foreground">Shop smart with Forma Health—fuel your hair from the inside out</h2>
+          <h2 className="font-headline text-4xl sm:text-5xl text-foreground">Healthy Choices, Delivered to You</h2>
           <p className="mt-4 text-lg text-foreground/70 max-w-2xl">
-            Enjoy healthier life with nutrient-rich plant based foods.
-          </p>
+          At Maison Royale, wellness meets convenience. We make it easy to order 
+          all kinds of healthy meals, fresh fruits, and wholesome salads crafted 
+          from the finest ingredients. Whether you&apos;re craving a light, refreshing salad,
+           a nourishing fruit bowl, or a hearty, balanced meal,
+            we&apos;ve got something to satisfy your taste while keeping 
+            you healthy.
+            </p> 
         </div>
         
         <Carousel
