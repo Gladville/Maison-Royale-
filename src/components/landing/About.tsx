@@ -50,7 +50,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div ref={imageRef} className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl">
             <Image
-              src="https://picsum.photos/1000/800"
+              src="/assets/36.jpg"
               alt="Elegant dining room of Maison Royale"
               fill
               className="object-cover"
