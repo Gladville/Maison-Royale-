@@ -64,7 +64,7 @@ export default function Experience() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="relative h-72 sm:h-80 rounded-lg overflow-hidden shadow-xl image-card">
               <Image
-                src="https://picsum.photos/800/600"
+                src="/assets/46.jpg"
                 alt="Community cooking class"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function Experience() {
             </div>
             <div className="relative h-72 sm:h-80 rounded-lg overflow-hidden shadow-xl image-card">
               <Image
-                src="https://picsum.photos/800/601"
+                src="/assets/37.jpg"
                 alt="Smiling person holding a box of fresh vegetables"
                 fill
                 className="object-cover"

@@ -35,7 +35,7 @@ export default function Atmosphere() {
       <div className="absolute inset-0 z-0">
         <Image
           ref={parallaxImage}
-          src="https://picsum.photos/1200/1000"
+          src="/assets/57.jpg"
           alt="Fresh organic vegetables"
           fill
           className="object-cover scale-125"
@@ -49,7 +49,7 @@ export default function Atmosphere() {
             Freshness Delivered Daily
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-white">
-            From farm to your table. We source the best ingredients for a healthier life.
+             Our wines are carefully selected and served at their peak, bringing the vineyard’s finest straight to your table.
           </p>
           <Button size="lg" asChild className="rounded-full">
             <Link href="/menu/drinks">See Our Products</Link>

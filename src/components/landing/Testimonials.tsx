@@ -9,15 +9,15 @@ import { cn } from '@/lib/utils';
 
 const testimonials = [
   {
-    quote: "The freshest ingredients I've ever had delivered. Forma Health changed the way I cook!",
-    author: "Jessica P.",
+    quote: "Maison Royale doesn't just serve food; it creates memories. Unforgettable.",
+    author: "Sofia Moreau",
   },
   {
-    quote: "Amazing quality and fantastic customer service. I love the convenience and the healthy options.",
+    quote: "Every dish was a work of art. The ambiance, the service... simply flawless.",
     author: "Mike R.",
   },
   {
-    quote: "My hair and skin have never looked better. It truly starts from the inside out. Thank you!",
+    quote: "An absolutely transcendent experience. The best fine dining in London, without a doubt.",
     author: "Sarah L.",
   },
 ];
@@ -42,7 +42,7 @@ export default function Testimonials() {
     <section className="relative py-24 sm:py-32 overflow-hidden bg-foreground text-background">
         <div className="absolute inset-0 z-0 opacity-10">
             <Image
-                src="https://picsum.photos/1200/800"
+                src="/assets/3.jpg"
                 alt="Blurred image of fresh produce"
                 fill
                 className="object-cover blur-sm"

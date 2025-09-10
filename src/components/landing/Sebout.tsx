@@ -50,17 +50,17 @@ export default function SecAbout() {
           <div ref={textRef} className="space-y-6">
             <h2 className="font-headline text-4xl sm:text-5xl text-foreground">A seamless Food experience,</h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-             We make grocery shopping easy, affordable, and reliable. From farm-fresh produce to your favorite daily essentials.
+            A seamless food experience starts here. We make delivery effortless, bringing you fresh, affordable, and reliable meals right to your doorstep. From farm-fresh produce to your favorite daily essentials, everything you need is just a tap away. Our commitment is to provide restaurant-quality food and groceries without the stress of shopping. Every order is carefully prepared and packed to preserve freshness, taste, and quality. With us, convenience meets flavor no delays, no hassles, just good food made easy. Whether it&apos;s a quick meal or a full grocery run, we deliver with speed and care. Our goal is to make life simpler while keeping your table full and satisfying. Because food isn&apos;t just about eating—it&apos;s about enjoying the process from start to finish. At our restaurant, we believe great food should always come with a great delivery experience.We make grocery shopping easy, affordable, and reliable. From farm-fresh produce to your favorite daily essentials.
             </p>
             <Button asChild className="rounded-full text-green-900 bg-[#B5CC38]">
               <Link href="/about">
-                Shop Now &rarr;
+                View Now &rarr;
               </Link>
             </Button>
           </div>
           <div ref={imageRef} className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden">
             <Image
-              src="https://picsum.photos/1000/800"
+              src="/assets/6.jpg"
               alt="Green smoothie in a glass surrounded by fresh fruit"
               fill
               className="object-cover"

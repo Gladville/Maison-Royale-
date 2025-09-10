@@ -34,7 +34,7 @@ export default function Atmosbience() {
       <div className="absolute inset-0 z-0">
         <Image
           ref={parallaxImage}
-          src="https://picsum.photos/1200/1000"
+          src="/assets/55.jpg"
           alt="Champagne being poured"
           fill
           className="object-cover scale-125"
