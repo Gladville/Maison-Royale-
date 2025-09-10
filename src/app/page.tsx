@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
         <Hero />
         <About />
         <SignatureDishes />
@@ -24,7 +23,6 @@ export default function Home() {
         <Experience />
         <Testimonials />
         <ReservationCTA />
-      </main>
       <Footer />
     </>
   );
