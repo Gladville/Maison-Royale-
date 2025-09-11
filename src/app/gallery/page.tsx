@@ -19,57 +19,57 @@ import Autoplay from "embla-carousel-autoplay";
 gsap.registerPlugin(ScrollTrigger);
 
 const alaCarteImagesTop = [
-  { src: 'https://picsum.photos/seed/gc1/800/600', alt: 'Gourmet Dish 1', hint: 'gourmet dish' },
-  { src: 'https://picsum.photos/seed/gc2/800/600', alt: 'Gourmet Dish 2', hint: 'plated dessert' },
-  { src: 'https://picsum.photos/seed/gc3/800/600', alt: 'Gourmet Dish 3', hint: 'artisan bread' },
-  { src: 'https://picsum.photos/seed/gc4/800/600', alt: 'Gourmet Dish 4', hint: 'seafood platter' },
-  { src: 'https://picsum.photos/seed/gc5/800/600', alt: 'Gourmet Dish 5', hint: 'roasted chicken' },
-  { src: 'https://picsum.photos/seed/gc6/800/600', alt: 'Gourmet Dish 6', hint: 'steak dinner' },
+  { src: '/assets/2.jpg', alt: 'Gourmet Dish 1', hint: 'gourmet dish' },
+  { src: '/assets/4.jpg', alt: 'Gourmet Dish 2', hint: 'plated dessert' },
+  { src: '/assets/7.jpg', alt: 'Gourmet Dish 3', hint: 'artisan bread' },
+  { src: '/assets/9.jpg', alt: 'Gourmet Dish 4', hint: 'seafood platter' },
+  { src: '/assets/3.jpg', alt: 'Gourmet Dish 5', hint: 'roasted chicken' },
+  { src: '/assets/6.jpg', alt: 'Gourmet Dish 6', hint: 'steak dinner' },
 ];
 
 const alaCarteImagesBottom = [
-  { src: 'https://picsum.photos/seed/gc7/800/600', alt: 'Gourmet Dish 7', hint: 'pasta dish' },
-  { src: 'https://picsum.photos/seed/gc8/800/600', alt: 'Gourmet Dish 8', hint: 'colorful salad' },
-  { src: 'https://picsum.photos/seed/gc9/800/600', alt: 'Gourmet Dish 9', hint: 'gourmet soup' },
-  { src: 'https://picsum.photos/seed/gc10/800/600', alt: 'Gourmet Dish 10', hint: 'fine dining appetizer' },
-  { src: 'https://picsum.photos/seed/gc11/800/600', alt: 'Gourmet Dish 11', hint: 'exotic fruit platter' },
-  { src: 'https://picsum.photos/seed/gc12/800/600', alt: 'Gourmet Dish 12', hint: 'cheese board' },
+  { src: '/assets/61.jpg', alt: 'Gourmet Dish 7', hint: 'pasta dish' },
+  { src: '/assets/62.jpg', alt: 'Gourmet Dish 8', hint: 'colorful salad' },
+  { src: '/assets/63.jpg', alt: 'Gourmet Dish 9', hint: 'gourmet soup' },
+  { src: '/assets/65.jpg', alt: 'Gourmet Dish 10', hint: 'fine dining appetizer' },
+  { src: '/assets/66.jpg', alt: 'Gourmet Dish 11', hint: 'exotic fruit platter' },
+  { src: '/assets/1.jpg', alt: 'Gourmet Dish 12', hint: 'cheese board' },
 ];
 
 const tastingImages = [
-  { src: 'https://picsum.photos/seed/gt1/800/600', alt: 'Tasting Menu 1', hint: 'molecular gastronomy' },
-  { src: 'https://picsum.photos/seed/gt2/800/600', alt: 'Tasting Menu 2', hint: 'deconstructed dish' },
-  { src: 'https://picsum.photos/seed/gt3/800/600', alt: 'Tasting Menu 3', hint: 'edible flowers' },
-  { src: 'https://picsum.photos/seed/gt4/800/600', alt: 'Tasting Menu 4', hint: 'culinary foam' },
-  { src: 'https://picsum.photos/seed/gt5/800/600', alt: 'Tasting Menu 5', hint: 'tasting course' },
-  { src: 'https://picsum.photos/seed/gt6/800/600', alt: 'Tasting Menu 6', hint: 'wine pairing' },
+  { src: '/assets/6.jpg', alt: 'Tasting Menu 1', hint: 'molecular gastronomy' },
+  { src: '/assets/2.jpg', alt: 'Tasting Menu 2', hint: 'deconstructed dish' },
+  { src: '/assets/7.jpg', alt: 'Tasting Menu 3', hint: 'edible flowers' },
+  { src: '/assets/9.jpg', alt: 'Tasting Menu 4', hint: 'culinary foam' },
+  { src: '/assets/3.jpg', alt: 'Tasting Menu 5', hint: 'tasting course' },
+  { src: '/assets/4.jpg', alt: 'Tasting Menu 6', hint: 'wine pairing' },
 ];
 
 const wineImages = [
-    { src: 'https://picsum.photos/seed/gw1/800/600', alt: 'Wine & Drinks 1', hint: 'red wine bottle' },
-    { src: 'https://picsum.photos/seed/gw2/800/600', alt: 'Wine & Drinks 2', hint: 'craft cocktail' },
-    { src: 'https://picsum.photos/seed/gw3/800/600', alt: 'Wine & Drinks 3', hint: 'champagne glasses' },
-    { src: 'https://picsum.photos/seed/gw4/800/600', alt: 'Wine & Drinks 4', hint: 'whiskey glass' },
-    { src: 'https://picsum.photos/seed/gw5/800/600', alt: 'Wine & Drinks 5', hint: 'bartender pouring' },
-    { src: 'https://picsum.photos/seed/gw6/800/600', alt: 'Wine & Drinks 6', hint: 'wine cellar' },
+    { src: '/assets/84.jpg', alt: 'Wine & Drinks 1', hint: 'red wine bottle' },
+    { src: '/assets/85.jpg', alt: 'Wine & Drinks 2', hint: 'craft cocktail' },
+    { src: '/assets/86.jpg', alt: 'Wine & Drinks 3', hint: 'champagne glasses' },
+    { src: '/assets/81.jpg', alt: 'Wine & Drinks 4', hint: 'whiskey glass' },
+    { src: '/assets/83.jpg', alt: 'Wine & Drinks 5', hint: 'bartender pouring' },
+    { src: '/assets/82.jpg', alt: 'Wine & Drinks 6', hint: 'wine cellar' },
 ];
 
 const dessertImagesTop = [
-  { src: 'https://picsum.photos/seed/gd1/800/600', alt: 'Dessert 1', hint: 'chocolate lava cake' },
-  { src: 'https://picsum.photos/seed/gd2/800/600', alt: 'Dessert 2', hint: 'strawberry cheesecake' },
-  { src: 'https://picsum.photos/seed/gd3/800/600', alt: 'Dessert 3', hint: 'macarons platter' },
-  { src: 'https://picsum.photos/seed/gd4/800/600', alt: 'Dessert 4', hint: 'artisan ice cream' },
-  { src: 'https://picsum.photos/seed/gd5/800/600', alt: 'Dessert 5', hint: 'tiramisu' },
-  { src: 'https://picsum.photos/seed/gd6/800/600', alt: 'Dessert 6', hint: 'fruit tart' },
+  { src: '/assets/67.jpg', alt: 'Dessert 1', hint: 'chocolate lava cake' },
+  { src: '/assets/68.jpg', alt: 'Dessert 2', hint: 'strawberry cheesecake' },
+  { src: '/assets/69.jpg', alt: 'Dessert 3', hint: 'macarons platter' },
+  { src: '/assets/70.jpg', alt: 'Dessert 4', hint: 'artisan ice cream' },
+  { src: '/assets/71.jpg', alt: 'Dessert 5', hint: 'tiramisu' },
+  { src: '/assets/72.jpg', alt: 'Dessert 6', hint: 'fruit tart' },
 ];
 
 const dessertImagesBottom = [
-  { src: 'https://picsum.photos/seed/gd7/800/600', alt: 'Dessert 7', hint: 'creme brulee' },
-  { src: 'https://picsum.photos/seed/gd8/800/600', alt: 'Dessert 8', hint: 'panna cotta' },
-  { src: 'https://picsum.photos/seed/gd9/800/600', alt: 'Dessert 9', hint: 'eclairs' },
-  { src: 'https://picsum.photos/seed/gd10/800/600', alt: 'Dessert 10', hint: 'chocolate mousse' },
-  { src: 'https://picsum.photos/seed/gd11/800/600', alt: 'Dessert 11', hint: 'sorbet selection' },
-  { src: 'https://picsum.photos/seed/gd12/800/600', alt: 'Dessert 12', hint: 'gourmet cupcake' },
+  { src: '/assets/73.jpg', alt: 'Dessert 7', hint: 'creme brulee' },
+  { src: '/assets/74.jpg', alt: 'Dessert 8', hint: 'panna cotta' },
+  { src: '/assets/75.jpg', alt: 'Dessert 9', hint: 'eclairs' },
+  { src: '/assets/68.jpg', alt: 'Dessert 10', hint: 'chocolate mousse' },
+  { src: '/assets/71.jpg', alt: 'Dessert 11', hint: 'sorbet selection' },
+  { src: '/assets/69.jpg', alt: 'Dessert 12', hint: 'gourmet cupcake' },
 ];
 
 
@@ -107,15 +107,26 @@ export default function GalleryPage() {
     return () => ctx.revert();
   }, []);
 
-  const CarouselComponent = ({ images, direction = 'forward' }: { images: {src:string, alt:string, hint: string}[], direction?: 'forward' | 'reverse' }) => (
+  const CarouselComponent = ({
+  images,
+  direction = 'forward',
+  itemClass = "pl-4 md:basis-1/3 lg:basis-1/4", // default
+  autoplayDelay = 2000
+}: {
+  images: { src: string, alt: string, hint: string }[],
+  direction?: 'forward' | 'reverse',
+  itemClass?: string,
+  autoplayDelay?: number
+}) => (
+  //  ({ images, direction = 'forward' }: { images: {src:string, alt:string, hint: string}[], direction?: 'forward' | 'reverse' }) => (
       <Carousel
-          plugins={[Autoplay({ delay: 2000, stopOnInteraction: false, playOnInit: true, stopOnMouseEnter: true })]}
+          plugins={[Autoplay({ delay: autoplayDelay, stopOnInteraction: false, playOnInit: true, stopOnMouseEnter: true })]}
           opts={{ align: "start", loop: true, direction: direction === 'forward' ? 'ltr' : 'rtl' }}
           className="w-full"
       >
           <CarouselContent className="-ml-4">
               {images.concat(images).map((image, index) => (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/3 lg:basis-1/4">
+                  <CarouselItem key={index} className={itemClass}>
                       <div className="p-1">
                           <div className="relative h-80 w-full overflow-hidden rounded-lg shadow-lg">
                               <Image
@@ -139,7 +150,7 @@ export default function GalleryPage() {
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/seed/g-hero/1800/1200"
+            src="/assets/6.jpg"
             alt="Artfully arranged collection of dishes"
             fill
             priority
@@ -168,9 +179,24 @@ export default function GalleryPage() {
             </p>
           </div>
           <div className="space-y-8">
+  <CarouselComponent 
+    images={alaCarteImagesTop} 
+    direction="forward" 
+    itemClass="pl-4 md:basis-1/3 lg:basis-1/4" 
+    autoplayDelay={2000} 
+  />
+  <CarouselComponent 
+    images={alaCarteImagesBottom} 
+    direction="forward" 
+    itemClass="pl-2 md:basis-1/3 lg:basis-1/4" 
+    autoplayDelay={3500}
+     
+  />
+</div>
+          {/* <div className="space-y-8">
             <CarouselComponent images={alaCarteImagesTop} direction="forward" />
             <CarouselComponent images={alaCarteImagesBottom} direction="reverse" />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -211,7 +237,7 @@ export default function GalleryPage() {
             </div>
              <div className="space-y-8">
                 <CarouselComponent images={dessertImagesTop} direction="forward" />
-                <CarouselComponent images={dessertImagesBottom} direction="reverse" />
+                <CarouselComponent images={dessertImagesBottom} direction="forward" />
             </div>
         </div>
       </section>
@@ -220,7 +246,7 @@ export default function GalleryPage() {
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/seed/g-cta/1800/1200"
+            src="/assets/48.jpg"
             alt="Elegant restaurant table setting"
             fill
             className="object-cover"
