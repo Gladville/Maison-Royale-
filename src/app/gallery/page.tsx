@@ -107,15 +107,26 @@ export default function GalleryPage() {
     return () => ctx.revert();
   }, []);
 
-  const CarouselComponent = ({ images, direction = 'forward' }: { images: {src:string, alt:string, hint: string}[], direction?: 'forward' | 'reverse' }) => (
+  const CarouselComponent = ({
+  images,
+  direction = 'forward',
+  itemClass = "pl-4 md:basis-1/3 lg:basis-1/4", // default
+  autoplayDelay = 2000
+}: {
+  images: { src: string, alt: string, hint: string }[],
+  direction?: 'forward' | 'reverse',
+  itemClass?: string,
+  autoplayDelay?: number
+}) => (
+  //  ({ images, direction = 'forward' }: { images: {src:string, alt:string, hint: string}[], direction?: 'forward' | 'reverse' }) => (
       <Carousel
-          plugins={[Autoplay({ delay: 2000, stopOnInteraction: false, playOnInit: true, stopOnMouseEnter: true })]}
+          plugins={[Autoplay({ delay: autoplayDelay, stopOnInteraction: false, playOnInit: true, stopOnMouseEnter: true })]}
           opts={{ align: "start", loop: true, direction: direction === 'forward' ? 'ltr' : 'rtl' }}
           className="w-full"
       >
           <CarouselContent className="-ml-4">
               {images.concat(images).map((image, index) => (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/3 lg:basis-1/4">
+                  <CarouselItem key={index} className={itemClass}>
                       <div className="p-1">
                           <div className="relative h-80 w-full overflow-hidden rounded-lg shadow-lg">
                               <Image
@@ -168,9 +179,24 @@ export default function GalleryPage() {
             </p>
           </div>
           <div className="space-y-8">
+  <CarouselComponent 
+    images={alaCarteImagesTop} 
+    direction="forward" 
+    itemClass="pl-4 md:basis-1/3 lg:basis-1/4" 
+    autoplayDelay={2000} 
+  />
+  <CarouselComponent 
+    images={alaCarteImagesBottom} 
+    direction="forward" 
+    itemClass="pl-2 md:basis-1/3 lg:basis-1/4" 
+    autoplayDelay={3500}
+     
+  />
+</div>
+          {/* <div className="space-y-8">
             <CarouselComponent images={alaCarteImagesTop} direction="forward" />
             <CarouselComponent images={alaCarteImagesBottom} direction="reverse" />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -211,7 +237,7 @@ export default function GalleryPage() {
             </div>
              <div className="space-y-8">
                 <CarouselComponent images={dessertImagesTop} direction="forward" />
-                <CarouselComponent images={dessertImagesBottom} direction="reverse" />
+                <CarouselComponent images={dessertImagesBottom} direction="forward" />
             </div>
         </div>
       </section>

@@ -25,10 +25,11 @@ const navLinks = [
   { 
     name: 'Menu', 
     dropdown: [
-      { name: 'À La Carte', href: '/menu/a-la-carte' },
-      { name: 'Tasting Menu', href: '/menu/tasting' },
-      { name: 'Wine & Drinks', href: '/menu/drinks' },
-      { name: 'Desserts', href: '/menu/desserts' },
+      
+      { name: 'À La Carte', href: '/gallery#a-la-carte' },
+      { name: 'Tasting Menu', href: '/gallery#tasting-menu' },
+      { name: 'Wine & Drinks', href: '/gallery#wine-drinks' },
+      { name: 'Desserts', href: '/gallery#desserts' },
     ]
   },
   { name: 'Gallery', href: '/gallery' },
