@@ -18,30 +18,30 @@ import Autoplay from "embla-carousel-autoplay";
 gsap.registerPlugin(ScrollTrigger);
 
 const eventTypes = [
-  { name: 'Corporate Events', description: 'Elevate your business meetings and functions with impeccable service.', image: 'https://picsum.photos/seed/ev1/800/600', hint: 'corporate event' },
-  { name: 'Weddings', description: 'Celebrate your special day in an atmosphere of timeless elegance.', image: 'https://picsum.photos/seed/ev2/800/600', hint: 'wedding reception' },
-  { name: 'Private Parties', description: 'From birthdays to anniversaries, we create unforgettable celebrations.', image: 'https://picsum.photos/seed/ev3/800/600', hint: 'private party' },
-  { name: 'Wine Tastings', description: 'Curated tasting experiences led by our expert sommeliers.', image: 'https://picsum.photos/seed/ev4/800/600', hint: 'wine tasting' },
+  { name: 'Corporate Events', description: 'Elevate your business meetings and functions with impeccable service.', image: '/assets/96.jpg', hint: 'corporate event' },
+  { name: 'Weddings', description: 'Celebrate your special day in an atmosphere of timeless elegance.', image: '/assets/95.jpg', hint: 'wedding reception' },
+  { name: 'Private Parties', description: 'From birthdays to anniversaries, we create unforgettable celebrations.', image: '/assets/9c.jpg', hint: 'private party' },
+  { name: 'Wine Tastings', description: 'Curated tasting experiences led by our expert sommeliers.', image: '/assets/9d.jpg', hint: 'wine tasting' },
 ];
 
 const venueSpaces = [
-  { name: 'The Grand Hall', src: 'https://picsum.photos/seed/vs1/1200/800', hint: 'grand hall elegant' },
-  { name: 'The Garden Terrace', src: 'https://picsum.photos/seed/vs2/1200/800', hint: 'garden terrace restaurant' },
-  { name: 'The Royal Suite', src: 'https://picsum.photos/seed/vs3/1200/800', hint: 'luxury private dining' },
-  { name: 'The Cellar', src: 'https://picsum.photos/seed/vs4/1200/800', hint: 'wine cellar dining' },
+  { name: 'The Grand Hall', src: '/assets/98.jpg', hint: 'grand hall elegant' },
+  { name: 'The Garden Terrace', src: '/assets/9a.jpg', hint: 'garden terrace restaurant' },
+  { name: 'The Royal Suite', src: '/assets/94.jpg', hint: 'luxury private dining' },
+  { name: 'The Cellar', src: '/assets/99.jpg', hint: 'wine cellar dining' },
 ];
 
 const galleryImagesWeddingTop = [
-    { src: 'https://picsum.photos/seed/gw1/800/600', alt: 'Wedding Decor 1', hint: 'wedding table setting'},
-    { src: 'https://picsum.photos/seed/gw2/800/600', alt: 'Wedding Decor 2', hint: 'wedding cake'},
-    { src: 'https://picsum.photos/seed/gw3/800/600 alt=', alt: 'Wedding Decor 3', hint: 'bride groom toast'},
-    { src: 'https://picsum.photos/seed/gw4/800/600', alt: 'Wedding Decor 4', hint: 'wedding floral centerpiece'},
+    { src: '/assets/41.jpg', alt: 'table setting', hint: 'wedding table setting'},
+    { src: '/assets/34.jpg', alt: 'cake', hint: 'wedding cake'},
+    { src: '/assets/42.jpg ', alt: ' outdoor ', hint: 'bride groom toast'},
+    { src: '/assets/97.jpg', alt: 'floral centerpiec', hint: 'wedding floral centerpiece'},
 ];
 const galleryImagesWeddingBottom = [
-    { src: 'https://picsum.photos/seed/gw5/800/600', alt: 'Wedding Decor 5', hint: 'outdoor wedding ceremony' },
-    { src: 'https://picsum.photos/seed/gw6/800/600', alt: 'Wedding Decor 6', hint: 'wedding guests dancing' },
-    { src: 'https://picsum.photos/seed/gw7/800/600', alt: 'Wedding Decor 7', hint: 'elegant wedding food' },
-    { src: 'https://picsum.photos/seed/gw8/800/600', alt: 'Wedding Decor 8', hint: 'champagne fountain' },
+    { src: '/assets/31.jpg', alt: 'toast', hint: 'outdoor wedding ceremony' },
+    { src: '/assets/99.jpg', alt: 'ceremony', hint: 'wedding guests dancing' },
+    { src: '/assets/32.jpg', alt: 'elegant', hint: 'elegant wedding food' },
+    { src: '/assets/9a.jpg', alt: 'champagne fountain', hint: 'champagne fountain' },
 ];
 
 const testimonials = [
@@ -111,7 +111,7 @@ export default function EventsPage() {
       {/* 1. Hero Section */}
       <section className="relative h-[80vh] w-full flex items-center justify-center text-center text-white overflow-hidden hero-section">
         <div className="absolute inset-0 z-0 hero-bg">
-          <Image src="https://picsum.photos/seed/e-hero/1800/1200" alt="Elegant private dining room" fill priority className="object-cover" data-ai-hint="private dining elegant"/>
+          <Image src="/assets/94.jpg" alt="Elegant private dining room" fill priority className="object-cover" data-ai-hint="private dining elegant"/>
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 hero-content">
@@ -211,7 +211,7 @@ export default function EventsPage() {
       {/* 6. Final CTA */}
       <section id="contact" className="relative h-[70vh] w-full flex items-center justify-center text-center text-white overflow-hidden final-cta">
         <div className="absolute inset-0 z-0">
-          <Image src="https://picsum.photos/seed/ecta/1800/1200" alt="Elegant event hall ready for a party" fill className="object-cover cta-bg" data-ai-hint="event hall luxury"/>
+          <Image src="/assets/47.jpg" alt="Elegant event hall ready for a party" fill className="object-cover cta-bg" data-ai-hint="event hall luxury"/>
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 animated-section">

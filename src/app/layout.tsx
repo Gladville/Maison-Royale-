@@ -3,7 +3,6 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: 'Maison Royale',
@@ -15,7 +14,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>

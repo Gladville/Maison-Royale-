@@ -109,7 +109,7 @@ export default function AboutPage() {
       <section className="relative h-[80vh] w-full flex items-center justify-center text-center text-white overflow-hidden hero-section">
         <div className="absolute inset-0 z-0 hero-bg">
           <Image
-            src="https://picsum.photos/1800/1200"
+            src="/assets/21.jpg"
             alt="Luxurious interior of Maison Royale"
             fill
             priority
@@ -148,7 +148,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl slide-in-right">
               <Image
-                src="https://picsum.photos/800/1000"
+                src="/assets/32.jpg"
                 alt="Chef carefully plating a dish"
                 fill
                 className="object-cover"
@@ -202,7 +202,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl slide-in-left">
               <Image
-                src="https://picsum.photos/800/1000"
+                src="/assets/60.jpg"
                 alt="Portrait of the head chef"
                 fill
                 className="object-cover"
@@ -230,10 +230,10 @@ export default function AboutPage() {
       </section>
       
       {/* 5. Awards */}
-      <section className="py-24 sm:py-32 bg-black text-white overflow-hidden animated-section">
+      <section className="py-24 sm:py-32 bg-[url('/assets/66.jpg')] text-white overflow-hidden animated-section">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 fade-up">
-                <h2 className="font-headline text-4xl sm:text-5xl text-[#808f2c]">Recognized Excellence</h2>
+                <h2 className="font-headline text-4xl sm:text-5xl text-[#b6cc37]">Recognized Excellence</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto text-white/80">We are honored to have been celebrated by our peers and critics.</p>
             </div>
             <Carousel 
@@ -262,7 +262,7 @@ export default function AboutPage() {
       <section className="relative h-[60vh] w-full flex items-center justify-center text-center text-white overflow-hidden final-cta">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/1800/1200?blur=2"
+            src="/assets/47.jpg"
             alt="Elegant table setting at Maison Royale"
             fill
             className="object-cover cta-bg"
