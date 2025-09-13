@@ -86,8 +86,8 @@ export default function SignatureDishes() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="ml-12 hidden sm:flex" />
-          <CarouselNext className="mr-12 hidden sm:flex" />
+          <CarouselPrevious className="ml-12 flex  " />
+          <CarouselNext className="mr-12 flex " />
         </Carousel>
       </div>
     </section>

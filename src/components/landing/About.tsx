@@ -48,7 +48,7 @@ export default function About() {
     <section ref={component} className="py-24 sm:py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div ref={imageRef} className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl">
+          <div ref={imageRef} className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl order-2 lg:order-1">
             <Image
               src="/assets/36.jpg"
               alt="Elegant dining room of Maison Royale"
@@ -57,7 +57,7 @@ export default function About() {
               data-ai-hint="elegant dining room"
             />
           </div>
-          <div ref={textRef} className="space-y-6">
+          <div ref={textRef} className="space-y-6 order-1 lg:order-2">
             <h2 className="font-headline text-4xl sm:text-5xl text-primary">A Legacy of Flavour</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Nestled in the heart of London, Maison Royale is more than a restaurant; it is a testament to a family's century-old passion for culinary excellence. Our story began with a promise to blend timeless tradition with bold innovation, creating an unforgettable dining experience.
