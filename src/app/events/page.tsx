@@ -34,7 +34,7 @@ const venueSpaces = [
 const galleryImagesWeddingTop = [
     { src: '/assets/41.jpg', alt: 'table setting', hint: 'wedding table setting'},
     { src: '/assets/34.jpg', alt: 'cake', hint: 'wedding cake'},
-    { src: '/assets/42.jpg ', alt: ' outdoor ', hint: 'bride groom toast'},
+    { src: '/assets/44.jpg ', alt: ' outdoor ', hint: 'bride groom toast'},
     { src: '/assets/97.jpg', alt: 'floral centerpiec', hint: 'wedding floral centerpiece'},
 ];
 const galleryImagesWeddingBottom = [
@@ -182,7 +182,7 @@ export default function EventsPage() {
           </div>
           <div className="space-y-8 fade-up">
             <GalleryCarousel images={galleryImagesWeddingTop} direction="forward" />
-            <GalleryCarousel images={galleryImagesWeddingBottom} direction="reverse" />
+            <GalleryCarousel images={galleryImagesWeddingBottom} direction="forward" />
           </div>
         </div>
       </section>

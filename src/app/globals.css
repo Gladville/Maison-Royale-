@@ -4,9 +4,16 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    scroll-behavior: smooth;
   }
 }
+
+@layer base {
+  body {
+    font-weight: 400;
+  }
+}
+
 
 @layer base {
   :root {
@@ -74,12 +81,16 @@
  
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
   ::selection {
-    @apply bg-primary/70 text-primary-foreground;
+    background-color: hsl(var(--primary) / 0.7);
+    color: hsl(var(--primary-foreground));
+
+    
   }
 }
