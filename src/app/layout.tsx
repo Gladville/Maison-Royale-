@@ -7,6 +7,9 @@ import Footer from '@/components/layout/Footer';
 export const metadata: Metadata = {
   title: 'Maison Royale',
   description: 'A Culinary Experience Beyond Taste',
+  icons: {
+    icon: "/favicon-v2.ico",
+  },
 };
 
 export default function RootLayout({
