@@ -6,7 +6,6 @@ import SignatureDishes from '@/components/landing/SignatureDishes';
 import ReservationCTA from '@/components/landing/ReservationCTA';
 import Secbout from '@/components/landing/Sebout';
 import Atmosbience from '@/components/landing/Ambience';
-import Atmosphere from '@/components/landing/Atmosphere';
 import Experience from '@/components/landing/Experience';
 import Testimonials from '@/components/landing/Testimonials';
 
@@ -19,7 +18,6 @@ export default function Home() {
         <SignatureDishes />
         <Secbout />
         <Atmosbience />
-        <Atmosphere/>
         <Experience />
         <Testimonials />
         <ReservationCTA />

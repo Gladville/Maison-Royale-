@@ -62,7 +62,7 @@ export default function Testimonials() {
         </div>
         <div className="mt-10">
           <Button variant="outline" size="lg" asChild className="border-primary text-primary hover:bg-primary hover:text-foreground rounded-full">
-            <Link href="/reviews">Read More Reviews &rarr;</Link>
+            <Link href="/#read-more-reviews">Read More Reviews &rarr;</Link>
           </Button>
         </div>
       </div>

@@ -51,7 +51,7 @@ export default function Atmosbience() {
             Curated wines, crafted cocktails, and champagne celebrations. Our bar is a symphony of spirits, designed to elevate your evening.
           </p>
           <Button size="lg" asChild>
-            <Link href="/menu/drinks">See Our Wine List &rarr;</Link>
+            <Link href="/gallery#wine-drinks">See Our Wine List &rarr;</Link>
           </Button>
         </div>
       </div>

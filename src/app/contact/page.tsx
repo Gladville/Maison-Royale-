@@ -112,7 +112,7 @@ export default function ContactPage() {
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center text-white overflow-hidden hero-section">
         <div className="absolute inset-0 z-0 hero-bg">
           <Image
-            src="https://picsum.photos/seed/contact-hero/1800/1200"
+            src="/assets/40.jpg"
             alt="Elegant restaurant bar"
             fill
             priority

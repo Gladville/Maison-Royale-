@@ -32,7 +32,7 @@ const alaCarteImagesBottom = [
   { src: '/assets/62.jpg', alt: 'Gourmet Dish 8', hint: 'colorful salad' },
   { src: '/assets/63.jpg', alt: 'Gourmet Dish 9', hint: 'gourmet soup' },
   { src: '/assets/65.jpg', alt: 'Gourmet Dish 10', hint: 'fine dining appetizer' },
-  { src: '/assets/66.jpg', alt: 'Gourmet Dish 11', hint: 'exotic fruit platter' },
+  { src: '/assets/66.png', alt: 'Gourmet Dish 11', hint: 'exotic fruit platter' },
   { src: '/assets/1.jpg', alt: 'Gourmet Dish 12', hint: 'cheese board' },
 ];
 
