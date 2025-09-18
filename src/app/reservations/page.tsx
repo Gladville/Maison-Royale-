@@ -152,7 +152,7 @@ export default function ReservationsPage() {
       <section className="relative h-[70vh] w-full flex items-center justify-center text-center text-white overflow-hidden hero-section">
         <div className="absolute inset-0 z-0 hero-bg">
           <Image
-            src="https://picsum.photos/seed/reserve-hero/1800/1200"
+            src="/assets/48.jpg"
             alt="Luxurious dining room at Maison Royale"
             fill
             priority
@@ -272,7 +272,7 @@ export default function ReservationsPage() {
             </div>
             <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl slide-in-right">
               <Image
-                src="https://picsum.photos/seed/reserve-policy/800/1000"
+                src="/assets/59.jpg"
                 alt="Elegant table setting with wine glasses"
                 fill
                 className="object-cover"

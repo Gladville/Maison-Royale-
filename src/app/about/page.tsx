@@ -127,7 +127,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-10">
             <Button size="lg" asChild className="text-lg px-8 py-6 rounded-full shadow-lg bg-[#b6cc37] hover:bg-[#84a641] text-black transition-all transform hover:scale-105 hover:shadow-xl">
-              <Link href="/reservations">Discover Our Menu</Link>
+              <Link href="/gallery">Discover Our Menu</Link>
             </Button>
           </div>
         </div>
