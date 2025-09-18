@@ -1,5 +1,4 @@
 
-
 This is a NextJS project on a luxirious Restaurant.
 A modern and elegant restaurant website for Maison Royale, built with Next.js, Tailwind CSS, and TypeScript.
 The site highlights the restaurant’s menu, ambiance, and reservation system, offering customers a seamless online experience.
